@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Testimonial() {
+export default function Testi() {
   return (
     <div>
       <h2 className="text-2xl leading-6 text-gray-800 text-center px-4">

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Contact() {
+export default function Cont() {
   return (
     <div>
       <div className="container mx-auto pt-16">

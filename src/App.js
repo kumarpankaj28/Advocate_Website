@@ -1,25 +1,34 @@
 import React from "react";
 import './App.css';
-import Home from './views/LandingPage/LandingPage';
-// import About from './views/AboutUsPage/AboutUsPage';
-// import Blog from './views/Blog/Blog';
-// import Contact from './views/ContactUsPage/ContactUsPage';
-// import Service from './views/Feature/Feature';
-// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./views/Home/Home"
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import About from "./views/About/About";
+import Services from "./views/Services/Services";
+import Blog from "./views/Blog/Blog";
+import Contact from "./views/Contact/Contact";
+import Error from "./views/Error/Error";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
 
 function App() {
   return (
-
-      <div className="App">
-
-      {/* <Route path="/" exact={true}><Home/></Route>
-      <Route path="/home"><Home/></Route>
-      <Route path="/about"><About/> </Route>
-      <Route path="/services"><Service/></Route>
-      <Route path="/blog"><Blog/></Route>
-      <Route path="/contact"><Contact/></Route> */}
-      <Home/>
-    </div>
+      <Router>
+          <Header/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services/>} />
+          <Route path="/blog" element={<Blog/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="*" element={<Error/>} />
+        </Routes>
+          <Footer/>
+      </Router>
 
   );
 }

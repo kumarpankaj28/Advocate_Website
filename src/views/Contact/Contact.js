@@ -1,7 +1,7 @@
 import React from "react";
 import Faq from '../Faq/Faq';
 
-export default function ContactUsPage() {
+export default function Contact() {
   return (
     <div>
       <Faq/>

@@ -4,12 +4,10 @@ import React, { useState } from "react";
 
 export default function Faq() {
   const [box1, setBox1] = useState(false);
-    const [box2, setBox2] = useState(false);
-    const [box3, setBox3] = useState(false);
-    const [box4, setBox4] = useState(false);
+  const [box2, setBox2] = useState(false);
+  const [box3, setBox3] = useState(false);
+  const [box4, setBox4] = useState(false);
   return (
-    <div>
-     
       <div>
         <img
           src="https://i.ibb.co/DQ4FZhL/pattern-bg.png"
@@ -285,6 +283,5 @@ export default function Faq() {
           </div>
         </div>
       </div>
-    </div>
   );
 }

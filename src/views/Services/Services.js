@@ -1,9 +1,8 @@
 import React from "react";
 
-export default function Feature() {
+export default function Services() {
   return (
     <div>
- 
       <div className="dark:bg-gray-900">
         <section className="mx-auto container py-20 ">
           <div className="flex justify-center items-center flex-col">

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ErrorPage() {
+export default function Error() {
   return (
     <div>
       <div className="bg-gray-800 h-screen">

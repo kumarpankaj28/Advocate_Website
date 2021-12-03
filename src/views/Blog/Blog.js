@@ -1,5 +1,6 @@
 import React from "react";
-function Blog() {
+
+export default function Blog() {
   return (
     <div>
       <div id="blog" className="bg-gray-100 px-4 xl:px-0 py-12 m-8">
@@ -177,5 +178,3 @@ function Blog() {
     </div>
   );
 }
-
-export default Blog;

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Services() {
+export default function Service() {
   return (
     <div className="bg-gray-100">
       <div className="2xl:mx-auto 2xl:container  xl:px-20 md:px-6 px-4 py-12">

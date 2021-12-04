@@ -14,7 +14,7 @@ export default function Service() {
               witty books nor son add
             </p>
             <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 mt-14">
-              <div className="flex items-center">
+              <div className="flex items-center cursor-pointer shadow-md ">
                 <div className="w-16 h-16 relative">
                   <div className="absolute bottom-0 right-0 bg-indigo-50 rounded-md w-16 h-16 -mb-4 -mr-2" />
                   <div className="relative z-20 text-white bottom-0 left-0 bg-indigo-700 rounded-md w-16 h-16 flex items-center justify-center mt-2 mr-3">
@@ -45,7 +45,7 @@ export default function Service() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center cursor-pointer shadow-md">
                 <div className="w-16 h-16 relative">
                   <div className="absolute bottom-0 right-0 bg-indigo-50 rounded-md w-16 h-16 -mb-4 -mr-2" />
                   <div className="relative z-20 text-white bottom-0 left-0 bg-indigo-700 rounded-md w-16 h-16 flex items-center justify-center mt-2 mr-3">
@@ -72,7 +72,7 @@ export default function Service() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center cursor-pointer shadow-md">
                 <div className="w-16 h-16 relative">
                   <div className="absolute bottom-0 right-0 bg-indigo-50 rounded-md w-16 h-16 -mb-4 -mr-2" />
                   <div className="relative z-20 text-white bottom-0 left-0 bg-indigo-700 rounded-md w-16 h-16 flex items-center justify-center mt-2 mr-3">
@@ -99,7 +99,7 @@ export default function Service() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center  cursor-pointer shadow-md">
                 <div className="w-16 h-16 relative">
                   <div className="absolute bottom-0 right-0 bg-indigo-50 rounded-md w-16 h-16 -mb-4 -mr-2" />
                   <div className="relative z-20 text-white bottom-0 left-0 bg-indigo-700 rounded-md w-16 h-16 flex items-center justify-center mt-2 mr-3">

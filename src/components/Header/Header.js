@@ -1,35 +1,41 @@
 /* eslint-disable no-script-url */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState,useEffect } from "react";
-import {Link} from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [show, setShow] = useState(false);
 
-    const [stickyClass, setStickyClass] = useState('relative');
-      
-    useEffect(() => {
-      window.addEventListener('scroll', stickNavbar);
-  
-      return () => {
-        window.removeEventListener('scroll', stickNavbar);
-      };
-    }, []);
-  
-    const stickNavbar = () => {
-      if (window !== undefined) {
-        let windowHeight = window.scrollY;
-        windowHeight > 100 ? setStickyClass('fixed top-0 left-0 z-50') : setStickyClass('relative');
-      }
+  const [stickyClass, setStickyClass] = useState("relative");
+
+  useEffect(() => {
+    window.addEventListener("scroll", stickNavbar);
+
+    return () => {
+      window.removeEventListener("scroll", stickNavbar);
     };
+  }, []);
+
+  const stickNavbar = () => {
+    if (window !== undefined) {
+      let windowHeight = window.scrollY;
+      windowHeight > 100
+        ? setStickyClass("fixed top-0 left-0 z-50")
+        : setStickyClass("relative");
+    }
+  };
 
   return (
     <div>
-      <nav className={`w-full bg-gray-300 relative  ${stickyClass}`}>
-        <div className="container mx-auto px-6 flex items-center justify-between ">
-            <div className="">
-            <h1 className="lg:ml-24 ">ADVOCATE</h1>
-            </div>
+      <nav className={`w-full bg-gray-300 relative  `}>
+        <div
+          className={`container bg-gray-300 mx-auto  h-20 px-6 flex items-center justify-between ${stickyClass} `}
+        >
+          <div className="">
+            <h1 className="lg:ml-24 ">
+              <Link to="/">ADVOCATE</Link>
+            </h1>
+          </div>
           {/* <svg
             aria-label="Home"
             className="cursor-pointer w-12 sm:w-auto"
@@ -73,21 +79,18 @@ export default function Header() {
                 </svg>
               ) : (
                 <svg
-                  aria-haspopup="true"
-                  aria-label="Main Menu"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="md:hidden icon icon-tabler icon-tabler-menu"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="#2c3e50"
+                  class="h-6 w-6"
                   fill="none"
-                  strokeLinecap="round"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
                 >
-                  <path stroke="none" d="M0 0h24v24H0z" />
-                  <line x1={4} y1={8} x2={20} y2={8} />
-                  <line x1={4} y1={16} x2={20} y2={16} />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
               )}
               {show && (
@@ -173,7 +176,7 @@ export default function Header() {
             </div>
           </div>
           <button className="focus:outline-none hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-indigo-700 text-indigo-700 px-4 sm:px-8 py-1 sm:py-3 text-sm">
-            Sign In
+            <Link to="/contact">Sign In</Link>
           </button>
         </div>
       </nav>

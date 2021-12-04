@@ -1,4 +1,6 @@
-import React from "react";  
+import React from "react";
+import { Link } from "react-router-dom";
+
 
 export default function Abou() {
   return (
@@ -18,6 +20,9 @@ export default function Abou() {
               have her rights entire, and her liberties inviolate; and we will
               that it be thus observed; which is apparent from
             </p>
+            <Link to="/about">
+              <button className=" p-1 rounded bg-indigo-500 text-white"> See More......</button>  
+            </Link>
           </div>
           <div className="w-full lg:w-8/12 ">
             <img

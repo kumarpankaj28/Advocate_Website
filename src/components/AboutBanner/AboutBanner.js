@@ -11,9 +11,9 @@ export default function AboutBanner() {
             alt="Do not match img"
           />
           <div className="absolute top-4 left-80 overlaytwo h-96 flex flex-col item-center justify-center ">
-            <h1 className=" z-40 text-5xl font-bold text-right mb-10 lg:text-center lg:text-7xl lg:px-56 text-green-500">
+            {/* <h1 className="absolute z-40 text-2xl font-bold text-justify mb-10 lg:text-center lg:text-7xl lg:px-56 text-green-500">
               ABOUT ME
-            </h1>
+            </h1> */}
           </div>
         </div>
         </div>

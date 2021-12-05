@@ -27,9 +27,9 @@ export default function Header() {
 
   return (
     <div>
-      <nav className={`w-full bg-gray-300 relative  `}>
+      <nav className="w-full bg-gray-300 relative">
         <div
-          className={`container bg-gray-300 mx-auto  h-20 px-6 flex items-center justify-between ${stickyClass} `}
+          className={`container bg-gray-300 mx-auto w-full h-20 px-6 flex items-center justify-between ${stickyClass} `}
         >
           <div className="">
             <h1 className="lg:ml-24 ">

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <div>
-      <div className=" bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 pb-12">
+      <div className="bg-linear-pink-invert pb-12">
         <div className="mx-auto container pt-20 lg:pt-24 flex flex-col items-center justify-center">
           <div>
             {/* <svg
@@ -68,7 +68,7 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="w-9/12  h-0.5 bg-gray-100 rounded-full" />
+          {/* <div className="w-9/12  h-0.5 bg-gray-100 rounded-full" />
           <div className="flex justify-between items-center pt-12">
             <div className="mr-4">
               <svg
@@ -415,7 +415,7 @@ export default function Footer() {
                 </defs>
               </svg>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

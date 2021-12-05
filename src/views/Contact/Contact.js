@@ -1,7 +1,19 @@
 import React from "react";
 import Faq from '../Faq/Faq';
+// import { useState } from 'react';
 
 export default function Contact() {
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div>
       <Faq/>

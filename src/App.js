@@ -14,6 +14,7 @@ import Error from "./views/Error/Error";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import LoginPage from "./components/LoginPage/LoginPage";
+import SignUp from "./components/LoginPage/SignUp";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/blog" element={<Blog/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/signIn" element={<LoginPage/>} />
+          <Route path="/signUp" element={<SignUp/>} />
           <Route path="*" element={<Error/>} />
         </Routes>
           <Footer/>

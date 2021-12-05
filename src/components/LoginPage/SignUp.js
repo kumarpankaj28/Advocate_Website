@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Login() {
+export default function SignUp() {
   // const Login = () => {
   //     const handleFormSubmit = (e) => {
   //         e.preventDefault();
@@ -15,9 +15,18 @@ export default function Login() {
       <div className="flex h-screen bg-white p-8 text-center">
         <div className="w-full max-w-md m-auto bg-gray-300 rounded-lg border shadow-2xl py-10 px-16">
           <h1 className="text-2xl font-medium text-primary mt-4 mb-12 text-center">
-            Login to Your Account
+            Signup to Your Account
           </h1>
           <form>
+            <div className="text-justify">
+              <label htmlFor="email">Name</label>
+              <input
+                type="name"
+                className={`w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4`}
+                id="name"
+                placeholder="Enter Your Name"
+              />
+            </div>
             <div className="text-justify">
               <label htmlFor="email">Email</label>
               <input
@@ -53,10 +62,8 @@ export default function Login() {
               </div>
             </div>
             <div className="flex justify-center items-center mt-6">
-              <button
-                 className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full"
-              >
-                Login
+              <button className="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full">
+                Signup
               </button>
             </div>
           </form>

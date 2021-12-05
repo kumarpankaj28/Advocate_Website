@@ -1,11 +1,9 @@
 import React from "react";
-import Login from "../../components/LoginPage/Login";
 import Faq from '../Faq/Faq';
 
 export default function Contact() {
   return (
     <div>
-      <Login/>
       <Faq/>
       <div className="py-4 lg:py-8  relative">
         <img

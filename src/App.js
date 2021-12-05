@@ -13,6 +13,7 @@ import Contact from "./views/Contact/Contact";
 import Error from "./views/Error/Error";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import LoginPage from "./components/LoginPage/LoginPage";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/services" element={<Services/>} />
           <Route path="/blog" element={<Blog/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/signIn" element={<LoginPage/>} />
           <Route path="*" element={<Error/>} />
         </Routes>
           <Footer/>

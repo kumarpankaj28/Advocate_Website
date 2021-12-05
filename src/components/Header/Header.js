@@ -176,7 +176,7 @@ export default function Header() {
             </div>
           </div>
           <button className="focus:outline-none hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-indigo-700 text-indigo-700 px-4 sm:px-8 py-1 sm:py-3 text-sm">
-            <Link to="/contact">Sign In</Link>
+            <Link to="/signIn">Sign In</Link>
           </button>
         </div>
       </nav>

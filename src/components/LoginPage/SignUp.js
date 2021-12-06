@@ -12,7 +12,7 @@ export default function SignUp() {
   //     };
   return (
     <div>
-      <div className="flex h-screen bg-white p-8 text-center">
+      <div className="flex  bg-white p-8 text-center">
         <div className="w-full max-w-md m-auto bg-gray-300 rounded-lg border shadow-2xl py-10 px-16">
           <h1 className="text-2xl font-medium text-primary mt-4 mb-12 text-center">
             Signup to Your Account

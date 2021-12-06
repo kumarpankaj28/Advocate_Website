@@ -54,7 +54,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li className=" md:mr-6 cursor-pointer pt-4 lg:py-0">
-                  <b>Help</b>
+                <Link to="/signIn"><b>Sign In</b></Link>
                 </li>
                 <li className="cursor-pointer pt-4 lg:py-0">
                   <b> Privacy Policy</b>

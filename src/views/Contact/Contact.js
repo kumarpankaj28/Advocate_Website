@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Faq from "../Faq/Faq";
-import { db } from "../../config";
+// import { db } from "../../config";
 
 export default function Contact() {
   const [user, setUser] = useState({

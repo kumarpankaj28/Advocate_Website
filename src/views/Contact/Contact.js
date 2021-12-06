@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Faq from "../Faq/Faq";
-// import { db } from "../../config";
+import { db } from "../../config";
+import { addDoc, collection } from "@firebase/firestore";
 
 export default function Contact() {
   const [user, setUser] = useState({
@@ -17,25 +18,24 @@ export default function Contact() {
     setUser({ ...user, [name]: value });
   };
   
-  const handleSubmit = async (e) => {
+  const handleSubmit = async () => {
+    console.log("cliked");
     // e.preventDefault();
-    // db.firestore()
-    //   .collection('contact')
-    //   .add({
-    //     name: name,
-    //     email: email,
-    //     massage:massage,
-    //   });
-    // name('');
-    // value('');
-    // setTimeout(() => {
-    // value('')
-    // }, 2000)
-  }
-   
+    console.log(user)
 
+    try {
+      const docRef = await addDoc(collection(db, "contacts"), user);
+      console.log("Document written with ID: ", docRef.id);
+      setUser({
+        name: "",
+      email: "",
+      massage: "",})
+      alert("You Have successfully submitted!!")
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
 
-
+  };
   return (
     <div>
       <Faq />
@@ -95,9 +95,9 @@ export default function Contact() {
               </div>
             </div>
             <div className="w-full lg:w-1/2   xl:pt-10 lg:pl-24">
-              <form
+              <div
                 className="flex flex-col items-start xl:justify-start 2xl:justify-end xl:px-0 px-4"
-                method="POST"
+                
               >
                 <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-wider text-indigo-700">
                   Let’s Talk
@@ -158,7 +158,7 @@ export default function Contact() {
                     </button>
                   </div>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
           {/* <iframe  title="my-map"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.4812958237!2d77.06889891452637!3d28.52728034310044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1638190203547!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy"></iframe> */}

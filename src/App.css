@@ -24,7 +24,7 @@
   color: white;
 }
 .hero{
-  background-image:url("/src/assets/img/imae1.jpg");
+  background-image:url("https://blog.ipleaders.in/wp-content/uploads/2018/01/BV-Acharya-46.jpg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */

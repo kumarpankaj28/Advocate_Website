@@ -27,12 +27,12 @@ export default function Header() {
 
   return (
     <div>
-      <nav className="w-full bg-gray-300 relative">
+      <nav className="w-full bg-black relative">
         <div
-          className={`container bg-gray-300 mx-auto w-full h-20 px-6 flex items-center justify-between ${stickyClass} `}
+          className={`container bg-black mx-auto w-full h-20 px-6 flex items-center justify-between ${stickyClass} `}
         >
           <div className="">
-            <h1 className="lg:ml-24 ">
+            <h1 className="lg:ml-24 font-bold text-white">
               <Link to="/">ADVOCATE</Link>
             </h1>
           </div>
@@ -156,26 +156,36 @@ export default function Header() {
                   <line x1={6} y1={6} x2={18} y2={18} />
                 </svg>
               </div>
-              <ul className="flex text-3xl md:text-base items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0 bg-white md:bg-transparent z-20">
-                <li className="text-gray-800 hover:text-gray-900 cursor-pointer lg:text-lg pt-10 md:pt-0">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="text-gray-800 hover:text-gray-900 cursor-pointer lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                  <Link to="/about">About</Link>
-                </li>
-                <li className="text-gray-800 hover:text-gray-900 cursor-pointer lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                  <Link to="/services">Services</Link>
-                </li>
-                <li className="text-gray-800 hover:text-gray-900 cursor-pointer lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                  <Link to="/blog">Blog</Link>
-                </li>
-                <li className="text-gray-800 hover:text-gray-900 cursor-pointer lg:text-lg pt-10 md:pt-0 md:ml-5 lg:ml-10">
-                  <Link to="/contact">Contact</Link>
-                </li>
+              <ul className="flex text-3xl md:text-base items-center py-10 md:flex flex-col md:flex-row justify-center fixed md:relative top-0 bottom-0 left-0 right-0  md:bg-transparent z-20">
+                <button className="btn hover:bg-white px-1 py-1 focus:outline-none bg-transparent transition duration-200 ease-in-out rounded border border-black">
+                  <li className="text-white hover:text-black cursor-pointer lg:text-lg pt-10 md:pt-0 lg:mr-5 lg:ml-5 ">
+                    <Link to="/">Home</Link>
+                  </li>
+                </button>
+                <button className="btn hover:bg-white px-1 py-1 focus:outline-none bg-transparent transition duration-200 ease-in-out rounded border border-black ">
+                  <li className="text-white  hover:text-black cursor-pointer lg:text-lg pt-10 md:pt-0 md:ml-5 lg:mr-5 md:mr-5">
+                    <Link to="/about">About</Link>
+                  </li>
+                </button>
+                <button className="btn hover:bg-white px-1 py-1 focus:outline-none bg-transparent transition duration-200 ease-in-out rounded border border-black ">
+                  <li className="text-white hover:text-black cursor-pointer lg:text-lg pt-10 md:pt-0 md:ml-5 lg:mr-5 md:mr-5">
+                    <Link to="/services">Services</Link>
+                  </li>
+                </button>
+                <button className="btn hover:bg-white px-1 py-1 focus:outline-none bg-transparent transition duration-200 ease-in-out rounded border border-black ">
+                  <li className="text-white hover:text-black cursor-pointer lg:text-lg pt-10 md:pt-0 md:ml-5 lg:mr-5 md:mr-5">
+                    <Link to="/blog">Blog</Link>
+                  </li>
+                </button>
+                <button className="btn hover:bg-white px-1 py-1 focus:outline-none bg-transparent transition duration-200 ease-in-out rounded border border-black ">
+                  <li className="text-white hover:text-black cursor-pointer lg:text-lg pt-10 md:pt-0 md:ml-5 lg:mr-5 md:mr-5">
+                    <Link to="/contact">Contact</Link>
+                  </li>
+                </button>
               </ul>
             </div>
           </div>
-          <button className="focus:outline-none hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-gray-200 rounded border border-indigo-700 text-indigo-700 px-4 sm:px-8 py-1 sm:py-3 text-sm">
+          <button className="focus:outline-none hidden md:block bg-transparent transition duration-150 ease-in-out hover:bg-white hover:text-black rounded border border-white text-white px-4 sm:px-8 py-1 sm:py-3 text-sm">
             <Link to="/contact">Sign In</Link>
           </button>
         </div>

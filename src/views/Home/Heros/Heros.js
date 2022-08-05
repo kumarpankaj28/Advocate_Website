@@ -7,7 +7,7 @@ export default function Heros() {
       <div className=" hero min-h-screen ">
         <div className="container mx-auto flex flex-col items-center py-12 sm:py-24">
           <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10 mt-24">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-200 font-extrabold leading-tight">
+            <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-gray-200 font-extrabold leading-tight">
               The Freedom to Create the{" "}
               <span className="text-gray-400">Websites</span> You Want
             </h1>

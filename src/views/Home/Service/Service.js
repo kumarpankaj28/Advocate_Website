@@ -6,7 +6,7 @@ export default function Service() {
       <div className="2xl:mx-auto 2xl:container  xl:px-20 md:px-6 px-4 py-12">
         <div className="lg:flex items-stretch justify-between">
           <div className="xl:w-1/2 lg:w-7/12">
-            <p className="lg:text-5xl text-3xl font-bold leading-10 text-gray-800">
+            <p className="lg:text-5xl text-3xl font-bold leading-10 text-gray-800 text-center">
               Why choose us
             </p>
             <p className="text-base leading-6 text-gray-600 mt-4 lg:w-7/12 w-full lg:text-justify">
